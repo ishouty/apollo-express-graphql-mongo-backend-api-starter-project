@@ -30,6 +30,8 @@ Server application core technology stack:
   - Protected endpoint - required valid token to proceed
   - Protected resolvers (e.g. e.g. session-based, role-based)
   - Protected routes (e.g. session-based, role-based)
+  - Limit the amount of failed logins
+    - Configurable
 
 - Core service
 
@@ -73,8 +75,9 @@ Server application core technology stack:
 
 evironenment variables are used to store passwords and config directory paths, which can be changed etc..
 
-`cp _config.env src/config/dev.env`
-`cp _config.env src/config/production.env`
+`cd apollo-express-graphql-mongo-backend-api-starter-project`
+`bash ./scripts/copy_env.sh dev`
+`bash ./scripts/copy_env.sh production`
 
 `npm install`
 
