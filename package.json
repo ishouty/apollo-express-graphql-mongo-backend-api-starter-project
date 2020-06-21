@@ -1,0 +1,68 @@
+{
+  "name": "apollo-express-graphql-mongo-backend-starter-project",
+  "version": "1.0.0",
+  "description": "A example application demonstrating backend authenticated api service using apollo-express and mongo backend",
+  "main": "index.js",
+  "engines": {
+    "node": "12.4.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "dev": "bash ./scripts/copy_env.sh dev && npm start",
+    "dev:debugger": "node inspect babel-node src/index.js",
+    "production": "bash ./scripts/copy_env.sh production && node src/index.js",
+    "jest": "jest --runInBand --detectOpenHandles --config=./tests/unit/config/jest.config.json ",
+    "test": "npm run jest",
+    "test:watch": "npm run jest -- --watchAll",
+    "init-script": "npx babel-node scripts/copy_default_script_db.js"
+  },
+  "keywords": [
+    "apollo",
+    "boilerplate",
+    "mongodb",
+    "express",
+    "graphql"
+  ],
+  "author": "Andy Nguyen <andy@ishouty.com> (https://www.ishouty.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "crypto": "^1.0.1",
+    "helmet": "^3.22.0",
+    "jest": "^25.5.4",
+    "jest-junit": "^10.0.0",
+    "moment": "^2.25.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.7",
+    "oauth2orize": "^1.11.0",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-oauth2-client-password": "^0.1.2",
+    "ramda": "^0.27.0",
+    "winston": "^3.2.1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.14.4",
+    "apollo-server-express": "^2.14.4",
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dataloader": "^1.4.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.3.2",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.9.9",
+    "uuid": "^3.3.2",
+    "validator": "^12.2.0"
+  }
+}
