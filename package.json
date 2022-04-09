@@ -38,7 +38,7 @@
     "helmet": "^3.22.0",
     "jest": "^25.5.4",
     "jest-junit": "^10.0.0",
-    "moment": "^2.25.1",
+    "moment": "^2.29.2",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.7",
     "oauth2orize": "^1.11.0",
